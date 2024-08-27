@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryptor</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-900 bg-opacity-75">
+    <div class="p-8 bg-gray-800 bg-opacity-50 rounded-lg shadow-lg max-w-md">
+        <h1 class="text-3xl font-bold mb-4 text-center">Text Encryptor</h1>
+
+        <!-- Botón de Instrucciones -->
+        <button id="instructionsBtn" class="w-full py-2 mb-4 bg-blue-600 rounded hover:bg-blue-700 transition">Instrucciones</button>
+
+        <!-- Nube de Instrucciones -->
+        <div id="instructionsBubble" class="hidden p-4 bg-gray-700 text-white rounded-lg shadow-md">
+            <p><strong>Antes de jugar considera lo siguiente:</strong></p>
+            <p>1.- Puedes encriptar o desencriptar palabras, números, contraseñas, etc. ¡Diviértete!</p>
+            <p>2.- Solo puedes formar hasta 250 caracteres.</p>
+        </div>
+
+        <!-- Campo de entrada con contador de caracteres -->
+        <textarea id="inputText" class="w-full p-2 mb-4 rounded bg-gray-700 text-white" rows="4" placeholder="Enter your text..." maxlength="250"></textarea>
+        <p id="charCounter" class="text-right text-gray-400">250 caracteres restantes</p>
+
+        <!-- Botones de Acciones -->
+        <div class="flex gap-2 mb-4">
+            <button id="encryptBtn" class="w-1/2 py-2 bg-indigo-600 rounded hover:bg-indigo-700 transition">Encrypt</button>
+            <button id="decryptBtn" class="w-1/2 py-2 bg-red-600 rounded hover:bg-red-700 transition">Decrypt</button>
+        </div>
+
+        <div class="flex gap-2 mb-4">
+            <button id="clearBtn" class="w-1/2 py-2 bg-gray-600 rounded hover:bg-gray-700 transition">Clear</button>
+            <button id="copyBtn" class="w-1/2 py-2 bg-green-600 rounded hover:bg-green-700 transition">Copy</button>
+        </div>
+
+        <textarea id="outputText" class="w-full p-2 mb-4 rounded bg-gray-700 text-white" rows="4" placeholder="Encrypted/Decrypted text..." maxlength="250"></textarea>
+        <p id="charCounterOutput" class="text-right text-gray-400">250 caracteres restantes</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- Klfh hvwh surbhfwr frq pxfkr fdulñr b kxplogdg lqwhqwdgr gduoh pl surslr wrtxh b wudwdqgr gh kdfhu dojr sru pl plvpr vlq yhu rwurv wudedmrv, sdud srghu oohjdu d xq uhvxowdgr surslr, hvshur txh sdud plv lqvwuxfwruhv b frohjdv ohv vhd gh vx djudgr :G --> 
